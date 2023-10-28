@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* EM HTML É ID = EM CSS É #
+   EM HTML É CLASS = EM CSS É . */
+body{
+    background-color: #669AFA;
+    font-family: sans-serif;
+}
+
+h1{color:rgb(24, 46, 46) ;}
+
+h1#principal{
+    background-color: #4C73BA;
+    text-align: center;
+    padding: 2%;
+    margin-left: -2%;
+    margin-right:-2% ;
+    margin-top: -1%;
+}
+
+
+h2{color:#18243B
+}
+
+.basico{color: red;
+
+}
+
+.intermediario{color: green;
+
+}
+
+.avançado{ color: blue;
+
+}
+.destaque{
+    background-color: rgba(0, 255, 0, 0.588);
+    text-align: center;
+    padding: 2%;
+    margin-left: -2%;
+    margin-right:-2% ;
+    margin-top: -1%;
+
+}
