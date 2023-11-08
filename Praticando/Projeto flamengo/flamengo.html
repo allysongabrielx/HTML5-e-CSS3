@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>História do flamego</title>
     <style>
+        @font-face {
+            font-family: 'Flamengo';
+            src: url('Flamengo\ 2021.ttf') format('opentype');
+            
+        }
         *{
             padding: 0px;
             margin: 0px;
@@ -15,8 +20,13 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover ;
+            font-family:"flamengo";
+            font-weight: normal;
+            font-style: normal;
         }
         header{
+
+            font-family:"flamengo";
 
             background-color: rgb(194, 5, 5);
             color: white;
@@ -24,23 +34,43 @@
             padding: 40px;
             font-family: sans-serif;
             margin: auto;
-            width: 664px;
+            width: 661px;
+            box-shadow: 4px 8px 9px rgba(0, 0, 0, 0.552);
             
             border-right-width: 0px;
             border-left-width: 0px;
+
+            z-index: 2;
 
             
 
         }
 
+        header h1{
+            
+            font-family:"flamengo";
+            font-weight: normal;
+            text-align: center; 
+
+        }
+
+        .img{
+            padding: 15px;
+        }
+
+    
+
         .navbar {
             overflow: hidden;
             background-color: rgb(194, 5, 5);
             padding: 15px;
+            
+            padding-top: 0px;
             text-align: center;
-            width: 714px;
+            width: 711px;
             margin: auto;
             text-decoration: none;
+            box-shadow: 4px 8px 9px rgba(0, 0, 0, 0.552);
             
             
             
@@ -48,6 +78,11 @@
 
         .dropdown {
             display: inline-block;
+            
+            position: relative;
+            margin-top: 20px;
+
+            float: left;  
             
         }
 
@@ -60,16 +95,20 @@
 
 
         .dropdown-content {
+        
             display: none;
             position: absolute;
             background-color: rgb(194, 5, 5);
             min-width: 160px;
-            box-shadow: 0px 8px 16px 1px rgba(0,0,0,0.2);
-            z-index: 1;
-            
-            
-        }
+            box-shadow: 4px 8px 9px rgba(0, 0, 0, 0.626);
+            z-index: 3;
+            left: 30px;
+            top: 100%;
+            }
 
+            
+            
+        
         .dropdown:hover .dropdown-content {
             display: block;
            
@@ -97,8 +136,24 @@
             width:700px;
             padding: 20px;
             margin: auto;
-            border: 2px solid;
             
+            box-shadow: 4px 8px 9px rgba(0, 0, 0, 0.552);
+
+            z-index: 1;
+
+            
+        }
+
+        main p{
+            text-align: justify;
+            font-family: sans-serif;
+            font-size: larger;
+            padding:10 ;
+
+            line-height: 30px;
+            
+            margin-block-start: 2em;
+             margin-block-end: 2em;
         }
 
         .container img{ 
@@ -115,10 +170,14 @@
     <header>
         <h1>História do Flamengo</h1>
         <picture class="container">
-            <img src="imagem/escudo-flamengo.png" alt=" escudo do flamengo">
+            <img class="img"
+            src="imagem/escudo-flamengo.png" alt=" escudo do flamengo">
         </picture>
+<h1>1895</h1>
 
     </header>
+
+    
 
     <div class="navbar">
         
