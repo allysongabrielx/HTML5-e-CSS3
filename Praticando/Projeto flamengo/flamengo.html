@@ -51,6 +51,7 @@
             font-family:"flamengo";
             font-weight: normal;
             text-align: center; 
+            z-index: 2;
 
         }
 
@@ -63,20 +64,18 @@
         .navbar {
             overflow: hidden;
             background-color: rgb(194, 5, 5);
-            padding: 15px;
             
-            padding-top: 0px;
             text-align: center;
-            width: 711px;
+            width: 741px;
             margin: auto;
-            text-decoration: none;
+            
             box-shadow: 4px 8px 9px rgba(0, 0, 0, 0.552);
             
             
             
         }
 
-        .dropdown {
+        .dropdown{
             display: inline-block;
             
             position: relative;
@@ -101,9 +100,10 @@
             background-color: rgb(194, 5, 5);
             min-width: 160px;
             box-shadow: 4px 8px 9px rgba(0, 0, 0, 0.626);
-            z-index: 3;
+            z-index: 10;
             left: 30px;
-            top: 100%;
+            top: auto;
+            
             }
 
             
@@ -111,6 +111,7 @@
         
         .dropdown:hover .dropdown-content {
             display: block;
+            z-index: 3;
            
         }
 
@@ -120,6 +121,7 @@
             text-decoration: none;
             display: block;
             font-size: 20px;
+            z-index: 3;
             
         }
 
@@ -138,8 +140,9 @@
             margin: auto;
             
             box-shadow: 4px 8px 9px rgba(0, 0, 0, 0.552);
-
             z-index: 1;
+
+            
 
             
         }
@@ -180,7 +183,6 @@
     
 
     <div class="navbar">
-        
         
         <div class="dropdown">
             <a class="dropdown">☰</a>
