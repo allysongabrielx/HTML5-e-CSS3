@@ -10,6 +10,14 @@
             font-family: sans-serif;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(201, 57, 57);
+
+        }
+
         table{
             width: 500px;
             text-align: center;
@@ -18,6 +26,11 @@
 
         thead, tfoot{
             background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: rgb(212, 255, 0);
+            /* Esta tag da para colocar efeito zebrado na tabela  */
         }
 
         td, th{
@@ -49,10 +62,12 @@
     </ul>
 
     <table>
+
+        <caption><abbr title="Com a tag &lt;caption&gt; da para colocar título nas tabelas">Estados e população Brasileira</abbr></caption>
         <thead>
 
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
 
         </thead>
 
@@ -106,7 +121,7 @@
 
         <tfoot>
             <tr>
-                <td>Total de Habitantes</td>
+                <th scope="row">Total de Habitantes</th>
                 <td>000000000</td>
             </tr>
             
